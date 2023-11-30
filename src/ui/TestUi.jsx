@@ -10,8 +10,12 @@ function TestUi({data,status,isLoading,num}) {
     const {mutate} = useMutation({
         mutationFn:Delet,
         onSuccess:()=>{
-            alert("deleted succeed");
+            toast.success("Deleted")
             queryClient.invalidateQueries({
+                queryKey:["test"]
+            })
+
+            queryClient.refetchQueries({
                 queryKey:["test"]
             })
 

@@ -21,6 +21,10 @@ function TestInput() {
             queryClient.invalidateQueries({
                 queryKey:["test"]
             })
+            
+            queryClient.refetchQueries({
+                queryKey:["test"]
+            })
             reset()
         },
         onError:(err)=>toast.error(err.message)
