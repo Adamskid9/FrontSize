@@ -13,3 +13,8 @@ html{
   padding: 0;
   margin: 0;
 }
+
+body{
+  overflow-y: scroll;
+  height: 1200px;
+}
