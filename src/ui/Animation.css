@@ -1,0 +1,21 @@
+.anime{
+   animation-name:anime;
+   animation-iteration-count: 1;
+   animation-duration: 12s;
+   animation-timing-function: linear;
+
+   margin-left: 50px;
+}
+
+
+@keyframes anime {
+    100%{
+      transform: translateX(-100px);
+      opacity: 0;
+    }
+   0%{
+    transform: translateX(0px);
+    opacity: 1;
+        
+    }
+}
